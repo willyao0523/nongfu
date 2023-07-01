@@ -14,6 +14,11 @@ const (
 	// 标识符与字面量
 	IDENT = "IDENT"
 	INT = "INT"
+	TRUE = "TRUE"
+	FALSE = "FALSE"
+	IF = "IF"
+	ELSE = "ELSE"
+	RETURN = "RETURN"
 
 	// 运算符
 	ASSIGN = "="
@@ -43,6 +48,11 @@ const (
 var keywords =  map[string]TokenType {
 	"fn": FUNCTION,
 	"let": LET,
+	"true": TRUE,
+	"false": FALSE,
+	"if": IF,
+	"else": ELSE,
+	"return": RETURN,
 }
 
 func LookupIdent(ident string) TokenType {
