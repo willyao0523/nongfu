@@ -48,6 +48,9 @@ const (
 	LET = "LET"
 
 	STRING = "STRING"
+
+	LBRACKET = "["
+	RBRACKET = "]"
 )
 
 var keywords =  map[string]TokenType {
