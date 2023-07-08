@@ -46,6 +46,8 @@ const (
 	// 关键字
 	FUNCTION = "FUNCTION"
 	LET = "LET"
+
+	STRING = "STRING"
 )
 
 var keywords =  map[string]TokenType {
